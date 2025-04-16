@@ -1,0 +1,25 @@
+
+---
+layout: default
+---
+
+<header>
+  <h1 class="title">sushismiths</h1>
+  <input type="text" id="searchInput" onkeyup="searchHashtags()" placeholder="Search hashtags...">
+</header>
+
+<div class="toc">
+  <a href="/pages/issue01.html">Issue 01</a>
+  <a href="/pages/issue02.html">Issue 02</a>
+</div>
+
+<script>
+function searchHashtags() {
+  var input = document.getElementById("searchInput");
+  var filter = input.value.toLowerCase();
+  var links = document.querySelectorAll(".hashtag");
+  links.forEach(link => {
+    link.style.display = link.textContent.toLowerCase().includes(filter) ? "inline-block" : "none";
+  });
+}
+</script>
