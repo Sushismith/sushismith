@@ -1,0 +1,19 @@
+
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: #fffdf8;
+  color: #222;
+  margin: 2rem;
+}
+.title {
+  font-size: 3rem;
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 1rem;
+}
+.toc a {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #444;
+  text-decoration: none;
+}
